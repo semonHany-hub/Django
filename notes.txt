@@ -1,0 +1,31 @@
+                                setting-up
+- django uses ORM(object relational mapper).
+- 'python --version' show the installed python version (3.12.6).
+- in node.js there's MVC(model, view, controller), while django use MVT(model, view, template).
+- 'python -m venv folder-name' used to create virtual environment folder used to install libraries locally in a specific project not in the whole computer.
+- '.\venv-folder-name\Scripts\activate' used to activate the created virtual environment folder.
+- 'pip install django' install locally in project venv.
+- '.\venv-folder-name\Scripts\deactivate.bat' used to deactivate the venv folder.
+- 'django-admin startproject project-name' create new project with Django.
+- 'django-admin startproject project-name .' copy the contents of the internal folder into the parent project.
+
+                         django project settings files
+- the file 'wsgi.py' run django with traditional servers.
+- the file 'asgi.py' handle async and web-socket.
+- 'settings.py' responsible of configuration (security, middleware, templates, database, installed apps, etc.)
+- 'manage.py' responsible of the commands that boot the project (runserver, migrate, createsuperuser…).
+- 'urls.py' contains routing admin path with 'admin' endpoint used to access the Django administration page enable managing the models (Users-Groups...).
+
+                              manange commands
+- 'python manage.py runserver' provides a link to localhost server.
+- 'python .\manage.py migrate' apply migrations(changes) in database and creates the database db.sqlite3.
+- 'python .\manage.py makemigrations' show migrations(changes) applied on database.
+- 'python .\manage.py createsuperuser' used to create new admin(username, email, password)
+
+                            creating project apps
+- 'python manage.py startapp app-name' create new django application.
+- include the recently created apps in the project-settings/settings.py in the INSTALLED_APPS list.
+- in project-settings/urls.py we connect any recently created apps' manually created urls files as the basic endpoints in urlpatterns list using include() as a second parameter in path().
+- in a single app-> any created functions in app/views.py are connected to urls.py as a second parameter in path() after the endpoint.
+- from django.urls import path, include used in urls.py urlpatterns[].
+- from django.http import HttpResponse to return http response from views.py functions.
