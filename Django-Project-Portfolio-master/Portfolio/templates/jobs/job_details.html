@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+|job-details
+{% endblock %}
+
+{% block content %}
+<div class="job-details" align="center" >
+  <img src="{{job_details.image.url}}" width="400px"/>
+  <div class="summary">{{job_details.summary}}</div>
+</div>
+{% endblock %}
