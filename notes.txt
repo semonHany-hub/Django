@@ -2,6 +2,7 @@
 - django uses ORM(object relational mapper).
 - 'python --version' show the installed python version (3.12.6).
 - in node.js there's MVC(model, view, controller), while django use MVT(model, view, template).
+- Model->database,  View->control,  Template->HTML.
 - 'python -m venv folder-name' used to create virtual environment folder used to install libraries locally in a specific project not in the whole computer.
 - '.\venv-folder-name\Scripts\activate' used to activate the created virtual environment folder.
 - 'pip install django' install locally in project venv.
@@ -29,3 +30,20 @@
 - in a single app-> any created functions in app/views.py are connected to urls.py as a second parameter in path() after the endpoint.
 - from django.urls import path, include used in urls.py urlpatterns[].
 - from django.http import HttpResponse to return http response from views.py functions.
+
+                            portfolio project
+- 'pip install -r requirements.txt'
+- 'pip install psycopg2-binary'
+- static files include css, js and images files.
+- 'pip install mysqlclient'
+- 'python manage.py collectstatic' this command create static folder in project folder differ from the one in project_settings.
+- 'python -m pip install Pillow'
+- 'python manage.py makemigrations'
+- edit database data in setting.py in portfolio to match the created mySQL database. 
+- 'python manage.py migrate'
+
+                        mySQL command line client
+- 'create database portfolio_db;' create database named 'portfolio_db'
+- "SHOW VARIABLES LIKE 'port';" display the database variables data
+- 'use portfolio_db;'
+- 'show tables;'
