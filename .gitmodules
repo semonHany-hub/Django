@@ -1,3 +1,9 @@
 [submodule "project1"]
 	path = project1
 	url = https://github.com/semonHany-hub/user-profile.git
+[submodule "Django-Project-Portfolio-master"]
+	path = Django-Project-Portfolio-master
+	url = https://github.com/semonHany-hub/portfolio-master.git
+[submodule "digit_press-main"]
+	path = digit_press-main
+	url = https://github.com/semonHany-hub/digit-press.git
